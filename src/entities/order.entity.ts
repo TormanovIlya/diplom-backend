@@ -17,7 +17,7 @@ export class OrderEntity {
   customerName: string;
   @Column()
   address: string;
-  @Column()
+  @Column({ default: false })
   status: boolean;
   @Column()
   cost: number;

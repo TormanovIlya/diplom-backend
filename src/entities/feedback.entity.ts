@@ -6,7 +6,7 @@ export class FeedbackEntity {
   id: number;
   @Column()
   username: string;
-  @Column()
+  @Column({ default: false })
   status: boolean;
   @Column()
   phoneNumber?: string;
